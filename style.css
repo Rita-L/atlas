@@ -1,0 +1,29 @@
+h1, h2 {
+  color: rgb(228, 135, 150);
+}
+
+p {
+  color: gray;
+}
+
+ul {
+  border: 3px solid orange;
+}
+
+ol {
+  border: 3px solid purple;
+}
+
+ol, ul {
+  padding: 15px 25px;
+  border-radius: 20px;
+}
+
+h1, strong {
+  color: rgb(228, 135, 150);;
+}
+
+em {
+  color: gray;
+}
+   
