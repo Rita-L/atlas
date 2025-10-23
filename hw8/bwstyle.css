@@ -24,7 +24,6 @@ body {
   align-items: stretch;
 }
 
-/* ====== Header / Banner ====== */
 header[role="banner"] {
   position: relative;
   background: var(--green-mid);
