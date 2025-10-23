@@ -1,0 +1,223 @@
+:root {
+  --green-light: #79d45a;   
+  --green-mid:   #6ccc54;   
+  --green-dark:  #52be43;   
+  --border:      #7a997a;   
+  --text:        #132013;
+}
+
+html { font-size: 10px; }
+
+body {
+  margin: 0;
+  font-family: 'Roboto Condensed', system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+  color: var(--text);
+  background: #cccccc; 
+}
+
+
+.flex-container {
+  width: 960px;
+  margin: 32px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+/* ====== Header / Banner ====== */
+header[role="banner"] {
+  position: relative;
+  background: var(--green-mid);
+  border: 1.5px solid var(--border);
+  border-bottom: none;
+  padding: 18px 24px 6px;
+  padding-right: 90px; 
+  min-height: 100px;
+  box-sizing: border-box;
+}
+
+header h1 {
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 4.8rem;
+  line-height: 1;
+  margin: 0 0 10px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #0d1b0d;
+  text-shadow: 0 2px 0 rgba(0,0,0,.25);
+}
+
+
+header img {
+  position: absolute;
+  top: 18px;          
+  right: 28px;        
+  width: 64px;        
+  height: auto;
+  display: block;
+  pointer-events: none;
+}
+
+
+header[role="banner"] {
+  position: relative;
+  background: var(--green-mid);
+  border: 1.5px solid var(--border);
+  border-bottom: none;
+  padding-top: 18px;
+  padding-bottom: 6px;
+  padding-right: 100px; 
+  min-height: 120px;    
+  box-sizing: border-box;
+}
+
+
+header nav {
+  background: var(--green-dark);
+  border: 1.5px solid var(--border);
+  border-left: 0;
+  border-right: 0;
+  margin-top: 6px;
+}
+
+header nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header nav a,
+header nav span {
+  display: block;
+  padding: 12px 18px;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #0f2d0f;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+}
+
+header nav a:hover,
+header nav span {
+  color: #0a100a;
+  text-shadow: 0 1px 0 rgba(0,0,0,.2);
+}
+
+
+.content-row {
+  display: flex;
+  gap: 14px;
+  margin-top: 14px;
+  background: #cccccc; 
+  padding: 10px;
+  border: 1.5px solid #b7b7b7;
+  box-sizing: border-box;
+}
+
+main, aside {
+  background: var(--green-light);
+  border: 1.5px solid var(--border);
+  box-sizing: border-box;
+  margin: 0;
+}
+
+main { width: calc(50% - 7px); padding: 22px; }
+aside { width: calc(50% - 7px); padding: 22px; }
+
+/* 小屏堆叠 */
+@media (max-width: 819.98px) {
+  .content-row { display: block; }
+  main, aside { width: 100%; margin-top: 14px; }
+}
+
+
+h2, h3 {
+  font-family: 'Cinzel Decorative', cursive;
+  color: #0d1b0d;
+  text-shadow: 0 1px 0 rgba(0,0,0,.18);
+}
+h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: .8px;
+  margin: 4px 0 14px;
+}
+h3 {
+  font-size: 2rem;
+  margin: 8px 0 10px;
+}
+
+p { font-size: 1.6rem; line-height: 1.55; margin: 10px 0; }
+a { color: #0f2d0f; }
+a:hover { color: #0a100a; }
+
+
+aside h2 {
+  display: block;
+  text-align: center;
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 2.6rem;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+  color: #0d1b0d;
+  text-shadow: 0 1px 0 rgba(0,0,0,.18);
+}
+
+aside {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  align-content: start;
+}
+#birds { display: contents; } 
+
+aside a {
+  display: block;
+}
+aside img {
+  display: block;
+  width: 100%;
+  height: 160px; 
+  object-fit: cover;
+  border: 1px solid rgba(0,0,0,.25);
+  border-radius: 2px;
+  transition: transform .25s ease;
+}
+aside a:hover img {
+  transform: scale(1.03);
+}
+
+
+footer[role="contentinfo"] {
+  background: var(--green-mid);
+  border: 1.5px solid var(--border);
+  border-top: none;
+  padding: 14px 18px;
+  margin-top: 14px;
+  text-align: left;
+}
+footer p {
+  margin: 6px 0;
+  font-size: 1.4rem;
+}
+
+
+
+
+
+header > img{
+  position: absolute !important;
+  top: 12px !important;              
+  right: 24px !important;            
+  width: 64px !important;            
+  height: auto !important;
+  display: block !important;
+  pointer-events: none !important;
+  z-index: 2 !important;             
+}
+
+
+
