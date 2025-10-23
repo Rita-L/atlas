@@ -2,7 +2,6 @@
 /* CSS Document */
 
 /* || General setup */
-
 html, body {
   margin: 0;
   padding: 0;
@@ -20,7 +19,6 @@ body {
 }
 
 /* || typography */
-
 h1, h2, h3 {
   font-family: 'Cinzel Decorative', cursive;
   color: #2a2a2a;
@@ -52,7 +50,6 @@ p, li {
 }
 
 /* || header layout */
-
 header {
   margin-bottom: 10px;
   display: flex;
@@ -64,11 +61,11 @@ body > * {
   padding: 1%;
 }
 
-/* ✅ 小改动：让每个区域底部分界线更灰更明显 */
+/* ✅ 小改动：保持分界线效果 */
 main, header, nav, article, aside, footer, section {
   background-color: rgba(0,255,0,0.5);
   padding: 1%;
-  border-bottom: 2px solid rgba(80,80,80,0.5); /* 深灰线 */
+  border-bottom: 2px solid rgba(80,80,80,0.5);
 }
 
 h1 {
@@ -90,6 +87,7 @@ nav {
 
 nav ul {
   padding: 0;
+  margin: 0; /* ✅ 防止不同环境下ul产生多余空隙 */
   list-style-type: none;
   flex: 2;
   display: flex;
@@ -112,13 +110,12 @@ nav a, nav span {
 }
 
 /* || main layout */
-
-/* 原本注释掉的布局保持不动，不影响视觉结构 */
-/*
+/* ✅ 开启主区域的横向排版（不影响颜色） */
 main {
   display: flex;
-} 
-*/
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
 
 article, section {
   flex: 4;
@@ -145,14 +142,15 @@ footer {
 }
 
 /* HK additions */
-
 main {
   flex: 3;
 }
+
 
 .flex-container {
   background-color: rgb(66, 63, 63);
   padding: 1%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center; 
 }
