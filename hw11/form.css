@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+
+
+#wrapper {
+	width: 60%;
+	margin-left: 4%;
+}
+
+div#formcol1 {
+	float: left;
+	width: 100%;
+}
+
+
+label {
+	margin-right: 0.3em;
+	width: 6em;
+	display: inline-block;
+	text-align: right;
+}
+
+
+#formcol1 li {
+	list-style: none;
+	margin-bottom: 0.5em;
+}
+
+
+input:focus,
+select:focus {
+	outline: 2px solid #BB3D2F; 
+}
+
+
+#formcol1 input.reqfield {
+	background: #FF9;
+}
+
+
+input[type="text"],
+input[type="radio"] {
+	margin-left: 0.3em;
+}
+
+.submit-button {
+	margin-top: 1em;
+}
